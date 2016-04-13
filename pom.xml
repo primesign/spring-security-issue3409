@@ -4,10 +4,11 @@
 	<groupId>com.prime-sign.springsecurity.test</groupId>
 	<artifactId>spring-security-issue3409</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<description>Testcase for Spring Security issue #3409/description>
+	<description>Testcase for Spring Security issue #3409</description>
 
 	<properties>
-		<org.springframework.version>4.2.4.RELEASE</org.springframework.version>
+		<org.springframework.version>4.3.0.RC1</org.springframework.version>
+		<org.springframework.security.version>4.1.0.RC1</org.springframework.security.version>
 	</properties>
 
 	<build>
@@ -25,8 +26,39 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<version>${org.springframework.security.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
